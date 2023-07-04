@@ -14,6 +14,16 @@ namespace ProjekOOP_FlyingDutchman
         private int age;
         private int ownerName;
 
+        public Pet(int health, int energy, int happiness, string name, int age, int ownerName)
+        {
+            this.Health = health;
+            this.Energy = energy;
+            this.Happiness = happiness;
+            this.Name = name;
+            this.Age = age;
+            this.OwnerName = ownerName;
+        }
+
         public int Health { get => health; set => health = value; }
         public int Energy { get => energy; set => energy = value; }
         public int Happiness { get => happiness; set => happiness = value; }
