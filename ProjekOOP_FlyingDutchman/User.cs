@@ -9,19 +9,11 @@ namespace ProjekOOP_FlyingDutchman
     {
         private string name;
         private int coin;
-        private List<Pet> listOfPets;
+        private List<Pet> listOfPets = new List<Pet>();
 
         public string Name { get => name; set => name = value; }
         public int Coin { get => coin; set => coin = value; }
         public List<Pet> ListOfPets { get => listOfPets; set => listOfPets = value; }
-
-        public Pet ListOfPets1
-        {
-            get => default;
-            set
-            {
-            }
-        }
 
         public void AddNewPet()
         {

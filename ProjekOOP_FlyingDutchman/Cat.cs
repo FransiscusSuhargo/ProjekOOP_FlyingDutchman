@@ -7,25 +7,31 @@ namespace ProjekOOP_FlyingDutchman
 {
     public class Cat : Pet
     {
+        public Cat(int health, int energy, int happiness, string name, int age, int ownerName) : base(health, energy, happiness, name, age, ownerName)
+        {
 
+        }
         public void Play()
         {
-            throw new System.NotImplementedException();
+            Happiness += 50;
+            Energy -= 30;
         }
 
         public void Sleep()
         {
-            throw new System.NotImplementedException();
+            Health += 20;
+            Energy += 70;
         }
 
         public void Bath()
         {
-            throw new System.NotImplementedException();
+            Health += 30;
         }
 
         public void Vaccinate()
         {
-            throw new System.NotImplementedException();
+            Health += 40;
+            //Coins -= 1000;
         }
     }
 }

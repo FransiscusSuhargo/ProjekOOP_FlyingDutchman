@@ -7,9 +7,15 @@ namespace ProjekOOP_FlyingDutchman
 {
     public class Chameleon : Pet
     {
+        public Chameleon(int health, int energy, int happiness, string name, int age, int ownerName) : base(health, energy, happiness, name, age, ownerName)
+        {
+
+        }
+
         public void Sleep()
         {
-            throw new System.NotImplementedException();
+            Health += 60;
+            Energy += 60;
         }
 
         public void ChangeColor()
