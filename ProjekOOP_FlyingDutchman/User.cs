@@ -17,12 +17,20 @@ namespace ProjekOOP_FlyingDutchman
 
         public void AddNewPet()
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void DisplayPreviousPets()
         {
-            throw new System.NotImplementedException();
+            
+        }
+        public void AddCoins()
+        {
+
+        }
+        public void DeductCoins()
+        {
+
         }
     }
 }

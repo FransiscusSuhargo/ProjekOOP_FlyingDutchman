@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace ProjekOOP_FlyingDutchman
 {
@@ -10,6 +11,11 @@ namespace ProjekOOP_FlyingDutchman
         public Cat(int health, int energy, int happiness, string name, int age, int ownerName) : base(health, energy, happiness, name, age, ownerName)
         {
 
+        }
+        public override void Feed()
+        {
+            Health += 30;
+            Energy += 50;
         }
         public void Play()
         {

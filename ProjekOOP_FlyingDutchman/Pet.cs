@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace ProjekOOP_FlyingDutchman
 {
-    public class Pet
+    public abstract class Pet
     {
         private int health;
         private int energy;
@@ -46,10 +46,7 @@ namespace ProjekOOP_FlyingDutchman
         public int Age { get => age; set => age = value; }
         public int OwnerName { get => ownerName; set => ownerName = value; }
 
-        public void Feed()
-        {
-
-        }
+        public abstract void Feed();
 
         public void ReduceStatusOvertime() //Berkurang 5 persen setiap detiknya
         {

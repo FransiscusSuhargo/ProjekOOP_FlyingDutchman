@@ -11,7 +11,11 @@ namespace ProjekOOP_FlyingDutchman
         {
 
         }
-
+        public override void Feed()
+        {
+            Health += 30;
+            Energy += 50;
+        }
         public void Sleep()
         {
             Health += 60;
