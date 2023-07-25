@@ -5,32 +5,34 @@ using System.Text;
 
 namespace ProjekOOP_FlyingDutchman
 {
+    [Serializable]
     public class User
     {
         private string name;
         private int coin;
-        private List<Pet> listOfPets = new List<Pet>();
+        private Pet pet;
+        private List<Toy> listOfToys; 
+
+        public User(string name, Pet pet)
+        {
+            this.Name = name;
+            Coin = 100; 
+            this.Pet = pet;
+            ListOfToys = new List<Toy>();
+        }
 
         public string Name { get => name; set => name = value; }
         public int Coin { get => coin; set => coin = value; }
-        public List<Pet> ListOfPets { get => listOfPets; set => listOfPets = value; }
+        public Pet Pet { get => pet; set => pet = value; }
+        public List<Toy> ListOfToys { get => listOfToys; set => listOfToys = value; }
 
-        public void AddNewPet()
+        public void AddCoins(int coins)
         {
-            
+            Coin += coins; 
         }
-
-        public void DisplayPreviousPets()
+        public void DeductCoins(int coins)
         {
-            
-        }
-        public void AddCoins()
-        {
-
-        }
-        public void DeductCoins()
-        {
-
+            Coin -= coins;
         }
     }
 }

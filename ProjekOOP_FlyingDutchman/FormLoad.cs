@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace ProjekOOP_FlyingDutchman
 {
-    public partial class FormMainMenu : Form
+    public partial class FormLoad : Form
     {
-        public FormMainMenu()
+        public FormLoad()
         {
             InitializeComponent();
+        }
+
+        private void FormLoad_Load(object sender, EventArgs e)
+        {
+            FormTitleScreen owner = (FormTitleScreen)this.Owner;
+        }
+
+        private void X_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

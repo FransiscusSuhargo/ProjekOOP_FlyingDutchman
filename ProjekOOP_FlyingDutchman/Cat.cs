@@ -1,43 +1,67 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
 
 namespace ProjekOOP_FlyingDutchman
 {
+    [Serializable]
     public class Cat : Pet
     {
-        public Cat(int health, int energy, int happiness, string name, int age, int ownerName) : base(health, energy, happiness, name, age, ownerName)
-        {
+        bool vaccinated;
 
-        }
-        public override void Feed()
+        public bool Vaccinated { get => vaccinated; set => vaccinated = value; }
+
+        public Cat(string name, string ownerName) : base(name, ownerName)
         {
+            Vaccinated = false; 
+        }
+        public override int Feed()
+        {
+            int prevHealth = Health;
+            int prevEnergy = Energy; 
             Health += 30;
             Energy += 50;
+            int coin = (Health - prevHealth) + (Energy - prevEnergy) * 50;
+            return coin;
         }
-        public void Play()
+        public int Play(Toy toy)
         {
-            Happiness += 50;
+            int prevHappiness = Happiness;
+            int prevEnergy = Energy;
+            Happiness += toy.HappinessGiven;
             Energy -= 30;
+            int coin = (Happiness - prevHappiness) * 50;
+            return coin;
         }
 
-        public void Sleep()
+        public int Sleep()
         {
+            int prevHealth = Health;
+            int prevEnergy = Energy;
             Health += 20;
             Energy += 70;
+            int coin = (Health - prevHealth) + (Energy - prevEnergy) * 50;
+            return coin;
         }
 
-        public void Bath()
+        public int Bath()
         {
+            int prevHealth = Health;
             Health += 30;
+            int coin = (Health - prevHealth) * 50;
+            return coin;
         }
 
-        public void Vaccinate()
+        public int Vaccinate()
         {
+            int prevHealth = Health;
             Health += 40;
-            //Coins -= 1000;
+            int coin = (Health - prevHealth) * 50;
+            Vaccinated = true;
+            return coin;
         }
     }
 }

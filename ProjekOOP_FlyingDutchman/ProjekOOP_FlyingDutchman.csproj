@@ -49,28 +49,82 @@
     <Compile Include="Cat.cs" />
     <Compile Include="Chameleon.cs" />
     <Compile Include="Fish.cs" />
-    <Compile Include="FormMainMenu.cs">
+    <Compile Include="FormBathroom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMainMenu.Designer.cs">
-      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    <Compile Include="FormBathroom.Designer.cs">
+      <DependentUpon>FormBathroom.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormScoreboard.cs">
+    <Compile Include="FormHomeScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormScoreboard.Designer.cs">
-      <DependentUpon>FormScoreboard.cs</DependentUpon>
+    <Compile Include="FormHomeScreen.Designer.cs">
+      <DependentUpon>FormHomeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInventory.Designer.cs">
+      <DependentUpon>FormInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoad.Designer.cs">
+      <DependentUpon>FormLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewGame.Designer.cs">
+      <DependentUpon>FormNewGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPetShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPetShop.Designer.cs">
+      <DependentUpon>FormPetShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShop.Designer.cs">
+      <DependentUpon>FormShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTitleScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTitleScreen.Designer.cs">
+      <DependentUpon>FormTitleScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Pet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Toy.cs" />
     <Compile Include="User.cs" />
-    <EmbeddedResource Include="FormMainMenu.resx">
-      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    <EmbeddedResource Include="FormBathroom.resx">
+      <DependentUpon>FormBathroom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormScoreboard.resx">
-      <DependentUpon>FormScoreboard.cs</DependentUpon>
+    <EmbeddedResource Include="FormHomeScreen.resx">
+      <DependentUpon>FormHomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInventory.resx">
+      <DependentUpon>FormInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoad.resx">
+      <DependentUpon>FormLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewGame.resx">
+      <DependentUpon>FormNewGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPetShop.resx">
+      <DependentUpon>FormPetShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShop.resx">
+      <DependentUpon>FormShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTitleScreen.resx">
+      <DependentUpon>FormTitleScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,6 +134,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram.cd" />
     <None Include="Properties\Settings.settings">
@@ -94,6 +149,204 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1vo3_q5e6_210617.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonConfirm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kucing Netral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next 2Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CatFood%28Normal%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layer 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coin Bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Health.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wardrobe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Energy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Happiness.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bathroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundBathroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bath.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundBathroom1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundBathroom2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bath1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vaccine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pet Shop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PetShop Title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modal Confirm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button Load.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button Option.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonConfirm1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1vo3_q5e6_210617 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1vo3_q5e6_210617 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Load.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewGame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kucing Netral1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ikan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ikan1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bunglon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormNewGame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kucing Makan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kucing Tidur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundMandi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundMandi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kucing Mandi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kucing Vaksin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toy3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inventory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bulu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tikus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BolaSold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BuluSold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TikusSold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FoodBag_Ikan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AkuariumIkan 2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,16 +5,21 @@ using System.Text;
 
 namespace ProjekOOP_FlyingDutchman
 {
+    [Serializable]
     public class Fish : Pet
     {
-        public Fish(int health, int energy, int happiness, string name, int age, int ownerName) : base(health, energy, happiness, name, age, ownerName)
+        public Fish(string name, string ownerName) : base(name, ownerName)
         {
 
         }
-        public override void Feed()
+        public override int Feed()
         {
+            int prevHealth = Health;
+            int prevEnergy = Energy; 
             Health += 20;
             Energy += 40;
+            int coin = (Health - prevHealth) + (Energy - prevEnergy) * 50;
+            return coin;
         }
         public void Clean()
         {
